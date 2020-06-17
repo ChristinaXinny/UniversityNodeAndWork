@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			h1 {color: blue;}
+			p {background: border-box;}
+		</style>
+	</head>
+
+	<body>
+		<table border="1">
+			
+			<caption>标题【居中】</caption>
+			
+			<thead>
+				<tr >
+					<th style="font-weight:200 ;color: blueviolet;">
+						单元格表头一
+					</th>
+					<th style="font-weight: 900;color: orangered;">表头二</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="2">单元格rowspan是合并单元行[纵向]</td>
+					<td colspan="2">单元格colspan合并单元列[横向]</td>
+					<td>第1行第1格</td>
+
+				</tr>
+				<tr>
+					<td>第二行第一格</td>
+					<td>第二行第二格</td>
+					<!--<td>第二行第3格</td>-->
+				</tr>
+				<tr>
+					<td>第3行第一格</td>
+					<td>第3行第二格</td>
+					<td>第3行第3格</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td ><span style="font-weight: 900;">span是样式的意思</span>汇总</td>
+					<td colspan="2" align="center">总结</td>
+					<td align="right">总结</td>
+				</tr>
+			</tfoot>
+		</table>
+		<br />th和td标签的区别
+		<br />th内容居中 粗体<br />
+		<thead></thead>
+		<tbody></tbody>
+		<tfoot></tfoot>
+		这些用于css样式 比较方便一起改动
+		<h1>asd</h1>
+		<p>sssseeee</p>
+	</body>
+
+</html>
