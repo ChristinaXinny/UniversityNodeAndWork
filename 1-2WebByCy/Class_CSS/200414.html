@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>内部样式表</title>
+		
+		
+		
+		外部引用
+		<link rel="stylesheet"  type="text/css" href="css/200414.css"/>
+		sheet：床单; 被单;
+		stylesheet	：样式表; 文档的外部样式表
+		@import跟link外部引用相似：
+		@import是先加载HTML 之后才会加载css 就会让用户先看到裸奔的效果 才有css的衣服加身
+		link 就是 先加载css 在加载html
+		
+		
+		
+		
+		内部样式
+		<style type="text/css">
+			p {color: yellow;}
+		</style>
+		这个是元素选择器
+		impute{...}
+		
+		
+		
+		
+		
+		<style>
+			body {
+				color: aqua;
+				background-color: blanchedalmond;
+				font-size: x-large;
+				padding: 10px;
+			}
+			
+			div{
+				color: darkviolet;
+				background-color: mistyrose;
+				padding: 10px;
+				width: 20%;
+				height: 90%;
+			}
+			#father div{
+				color: darkviolet;
+				background-color: lightskyblue;
+			}
+		</style>
+		用body设置的 <body>里面的所以颜色出<p ..>行内设置的外 其他的都是这个色
+		
+		
+		
+		
+		
+		<style type="text/css">
+			#we5 {color: seagreen;}
+			/*#6666{color: blue; font-size:xx-large;}*/
+			#we77{color: brown;font-size: xx-large;}
+			
+			.qqq {color: deepskyblue;} 
+		</style>
+		#后面是id 这个是id选择器
+		.后面是class 这个是class选择器
+		
+	</head>
+	<body>
+		
+		
+		<hr />
+		<p>侧实验室</p>
+		<p style="color: red;">侧实验室[这个是行内样式]</p>
+		<p style="color: #0000ff;">侧实验室[这个是行内样式 #颜色是大小写同行]</p>
+		<p style="color: #FF00ff;">侧实验室[这个是行内样式 #颜色是大小写同行]</p>
+		
+		优先级别 为 谁离它最近，也就是最后一次定义的是谁 就是用谁的样式
+		
+		
+		
+		
+		
+		<hr />
+		id：像 身份证号  唯一性，同一页面相同id只能出现一次
+		class：就像名字  可以出现多个
+		<p id="we5">we5---- idididi</p>
+		<p id="we5">we5----这是不对的 id出现了两次</p>
+		<p id="we77">we77---这是对的 qweqwe</p>
+		
+		
+		<p class="qqq">class-qqq-idididi</p>
+		<p id="we5" class="qqq">we5--qqq--这是不对的 id出现了两次</p>
+		<p id="we77">we77---这是对的 </p>
+		同时又id和class 优先级id>class
+		
+		
+		
+		<hr />
+		选择器：
+		选择方式
+		最常用的5中：
+			元素选择器，id选择器，class选择器，后代选择器，群组选择器
+			
+		语法：
+			选择器{
+				属性1：取值1；
+				。。。
+				属性n：取值。。。；
+			}//见26行
+			
+		<hr />
+		<div>
+			<p>  div-----试试！！！！</p>
+		</div>
+		
+		<hr />
+		<div>
+			<p id="father">
+				<div>
+					<p> 11</p>
+					<p>222</p>
+				</div>
+				<div>
+					<p>3333</p>
+					<p>444</p>
+				</div>
+			</p>
+			
+		</div>
+		
+	</body>
+</html>

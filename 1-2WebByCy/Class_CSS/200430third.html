@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>third</title>
+		<style type="text/css">
+			body{
+				background-color: lightskyblue;
+			}
+			.table1{
+				border: 1px solid #4169E1;	/*安排最外框*/
+			}
+			table,th,tr,td{
+				border-bottom:1px solid royalblue;  /*这个只有下边框框，没有竖线*/
+				width: 500px;
+				height: 25px;		
+				text-indent: 1em;  /*缩进下字*/
+				font-weight: bold;
+				border-collapse: collapse;
+			}
+			th{
+				text-align: left;	/*因为初始化会让th居中*/
+				background-color: royalblue;		
+				color: white;
+			}
+			caption{
+				font-family: courier;
+				font-size: xx-large;
+				text-align: left;
+			}
+		</style>
+	</head>
+	
+	<body>
+		
+		<table class="table1">
+			<caption>Design Preview</caption>
+			<tr>
+				<th>Name</th>
+				<th>City</th>
+				<th>Phone</th>
+			</tr>
+			<tr>
+				<td>AAAA</td>
+				<td>NewYork</td>
+				<td>+88888888888888</td>
+			</tr>
+			<tr>
+				<td>BBBB</td>
+				<td>HK</td>
+				<td>+233333</td>
+			</tr>
+			<tr>
+				<td>CCCC</td>
+				<td>London</td>
+				<td>+666666666666</td>
+			</tr>
+			<tr>
+				<td>DDDD</td>
+				<td>BeiJing</td>
+				<td>+10086</td>
+			</tr>
+		</table>
+		
+	</body>
+</html>

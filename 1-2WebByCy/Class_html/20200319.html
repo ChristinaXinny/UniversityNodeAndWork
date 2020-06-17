@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	在HTML中让两个div并排显示，通常情况下有三种实现方式，包括:
+
+（1）设置为行内样式，display:inline-block
+
+（2）设置float浮动
+
+（3）设置position定位属性为absolute
+
+以下为三种方式的具体实现代码：
+
+1、设置每个div的展现属性为行内样式，示例代码为：
+
+<div class="app">
+
+<div style="display:inline-block;background:#f00;">div1</div>
+
+<div style="display:inline-block;background:#0f0;margin-left:10px;">div2</div>
+
+</div>
+
+
+2、设置float浮动，示例代码为：
+
+<div class="app">
+
+<div style="float:left;background:#f00;">div1</div>
+
+<div style="float:left;background:#0f0;margin-left:10px;">div2</div>
+
+</div>
+
+
+3、设置position定位属性为absolute, 示例代码为：
+
+<div class="app">
+
+<div style="position: absolute;width:100px;background:#f00;">div1</div>
+
+<div style="position: absolute;left:100px;background:#0f0;margin-left:10px;">div2</div>
+
+</div>
+
+
+	</body>
+</html>
